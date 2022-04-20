@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuardarValidarDatos">
         <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
             android:name=".NumerosActivity"
             android:exported="false" />
         <activity
