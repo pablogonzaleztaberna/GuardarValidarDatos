@@ -12,7 +12,7 @@
     <string name="btn_par_impar">Par Impar</string>
     <string name="btn_par">Par</string>
     <string name="btn_impar">Impar</string>
-    <string name="registro">REGISTRARSE</string>
+    <string name="registro">REGISTRO</string>
     <string name="tipo_radio">Tipo</string>
     <string name="noticias">Noticias</string>
 </resources>
