@@ -83,4 +83,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void irRegistro(View view) {
+        Intent registro = new Intent(this, RegistroActivity.class);
+        startActivity(registro);
+    }
 }

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AADFDD"
+    android:background="#C5DDDC"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-black"
         android:text="@string/login"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -63,14 +63,29 @@
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
-        android:layout_marginStart="256dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#3F51B5"
         android:onClick="guardarDatos"
-        android:text="@string/btn_guardar"
+        android:text="@string/btn_acceder"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTxt_Numero" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="irRegistro"
+        android:text="@string/registro"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

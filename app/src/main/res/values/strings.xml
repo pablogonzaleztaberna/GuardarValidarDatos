@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GuardarValidarDatos</string>
     <string name="login">LOGIN</string>
+    <string name="btn_acceder">ACCEDER</string>
     <string name="btn_guardar">GUARDAR</string>
     <string name="btn_logout">LOGOUT</string>
     <string name="nombre_inicio">Nombre</string>
@@ -11,4 +12,7 @@
     <string name="btn_par_impar">Par Impar</string>
     <string name="btn_par">Par</string>
     <string name="btn_impar">Impar</string>
+    <string name="registro">REGISTRARSE</string>
+    <string name="tipo_radio">Tipo</string>
+    <string name="noticias">Noticias</string>
 </resources>
