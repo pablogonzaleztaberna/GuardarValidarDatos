@@ -4,90 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".NumerosActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/txtV_1"
+            android:id="@+id/txtV_Numero1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="UNO"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txtV_2"
+            android:id="@+id/txtV_Numero2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="DOS"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btnPar"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#1E2A9A"
+        android:layout_height="70dp"
+        android:backgroundTint="#FFDD00"
         android:text="@string/btn_par"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.324" />
 
     <Button
         android:id="@+id/btnParImpar"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#1E2A9A"
+        android:layout_height="70dp"
+        android:backgroundTint="#FFDD00"
         android:text="@string/btn_par_impar"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnPar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.426" />
 
     <Button
         android:id="@+id/btnImpar"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#1E2A9A"
+        android:layout_height="70dp"
+        android:backgroundTint="#FFDD00"
         android:text="@string/btn_impar"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPar"
+        app:layout_constraintVertical_bias="0.229" />
 
     <Button
         android:id="@+id/btnInicio"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="70dp"
-        android:backgroundTint="#09FF00"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#3F51B5"
         android:onClick="irInicio"
         android:text="@string/inicio"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnParImpar"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintTop_toBottomOf="@+id/btnImpar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

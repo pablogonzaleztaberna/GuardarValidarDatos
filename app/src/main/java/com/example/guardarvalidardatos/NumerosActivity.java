@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class NumerosActivity extends AppCompatActivity {
 
     // Inicializamos los elementos introducidos en el activity_numeros.xml
-    TextView txtV_1, txtV_2;
+    TextView txtV_Numero1, txtV_Numero2;
     Button btnParImpar, btnPar, btnImpar, btnInicio;
 
     @Override
@@ -21,8 +21,8 @@ public class NumerosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numeros);
 
         // Accedemos a esos elementos por su id
-        txtV_1 = (TextView) findViewById(R.id.txtV_1);
-        txtV_2 = (TextView) findViewById(R.id.txtV_2);
+        txtV_Numero1 = (TextView) findViewById(R.id.txtV_Numero1);
+        txtV_Numero2 = (TextView) findViewById(R.id.txtV_Numero2);
         btnParImpar = (Button) findViewById(R.id.btnParImpar);
         btnPar = (Button) findViewById(R.id.btnPar);
         btnImpar = (Button) findViewById(R.id.btnImpar);
@@ -33,8 +33,8 @@ public class NumerosActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getBaseContext(), "Click sobre Botón PAR IMPAR", Toast.LENGTH_SHORT).show();
-                txtV_1.setText("UNO");
-                txtV_2.setText("DOS");
+                txtV_Numero1.setText("UNO");
+                txtV_Numero2.setText("DOS");
             }
         });
 
@@ -43,8 +43,8 @@ public class NumerosActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getBaseContext(), "Click sobre Botón PAR", Toast.LENGTH_SHORT).show();
-                txtV_1.setText("DOS");
-                txtV_2.setText("CUATRO");
+                txtV_Numero1.setText("DOS");
+                txtV_Numero2.setText("CUATRO");
             }
         });
 
@@ -53,8 +53,8 @@ public class NumerosActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getBaseContext(), "Click sobre Botón IMPAR", Toast.LENGTH_SHORT).show();
-                txtV_1.setText("UNO");
-                txtV_2.setText("TRES");
+                txtV_Numero1.setText("UNO");
+                txtV_Numero2.setText("TRES");
             }
         });
     }

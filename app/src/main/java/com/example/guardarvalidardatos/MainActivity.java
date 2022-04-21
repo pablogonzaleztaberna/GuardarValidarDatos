@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // Método onclick del botón Registrarse que nos dirige a la pantalla de Registro
     public void irRegistro(View view) {
         Intent registro = new Intent(this, RegistroActivity.class);
         startActivity(registro);

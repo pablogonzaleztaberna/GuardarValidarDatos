@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C5DDDC"
+    android:background="#97FFEC"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="sans-serif-condensed-light"
         android:text="@string/login"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -27,65 +27,85 @@
 
     <EditText
         android:id="@+id/editTxt_Nombre"
-        android:layout_width="200dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="164dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Tu nombre..."
         android:inputType="textPersonName"
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreLogin" />
 
     <EditText
         android:id="@+id/editTxt_Numero"
-        android:layout_width="225dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="192dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Tu número (entre 1 y 30)"
         android:inputType="number"
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxt_Nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroLogin" />
 
     <Button
-        android:id="@+id/btnGuardar"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
+        android:id="@+id/btnAcceder"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="#3F51B5"
         android:onClick="guardarDatos"
         android:text="@string/btn_acceder"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTxt_Numero" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="170dp"
         android:layout_height="70dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="#3F51B5"
         android:onClick="irRegistro"
-        android:text="@string/registro"
-        android:textAlignment="textStart"
-        android:textSize="16sp"
+        android:text="Registrarse"
+        android:textAlignment="center"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGuardar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAcceder" />
+
+    <TextView
+        android:id="@+id/txtNombreLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/nombre"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+    <TextView
+        android:id="@+id/txtNumeroLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/numero"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt_Nombre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,15 +4,15 @@
     <string name="btn_acceder">ACCEDER</string>
     <string name="btn_guardar">GUARDAR</string>
     <string name="btn_logout">LOGOUT</string>
-    <string name="nombre_inicio">Nombre</string>
-    <string name="numero_inicio">Número</string>
-    <string name="tus_datos">TUS DATOS</string>
-    <string name="numeros">IR A NÚMEROS</string>
-    <string name="inicio">IR A INICIO</string>
+    <string name="nombre">Nombre</string>
+    <string name="numero">Número</string>
+    <string name="datos">DATOS</string>
+    <string name="numeros">NÚMEROS</string>
+    <string name="inicio">VOLVER A INICIO</string>
     <string name="btn_par_impar">Par Impar</string>
     <string name="btn_par">Par</string>
     <string name="btn_impar">Impar</string>
     <string name="registro">REGISTRO</string>
-    <string name="tipo_radio">Tipo</string>
+    <string name="tipo">Tipo</string>
     <string name="noticias">Noticias</string>
 </resources>
