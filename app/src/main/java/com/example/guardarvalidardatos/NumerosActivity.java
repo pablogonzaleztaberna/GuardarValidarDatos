@@ -59,6 +59,7 @@ public class NumerosActivity extends AppCompatActivity {
         });
     }
 
+    // Método onclick del botón Volver a Inicio que nos dirige a la pantalla de inicio
     public void irInicio(View view) {
         Intent inicio = new Intent(this, InicioActivity.class);
         startActivity(inicio);

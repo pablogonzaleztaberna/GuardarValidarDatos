@@ -45,6 +45,7 @@ public class InicioActivity extends AppCompatActivity {
         startActivity(login);
     }
 
+    // Método onclick del botón Números que nos dirige a la pantalla de números
     public void irNumeros(View view) {
         SharedPreferences preferencias = getSharedPreferences("datos", Context.MODE_PRIVATE);
         // Uso de la clase Editor para guardar los datos

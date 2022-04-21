@@ -28,15 +28,19 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("datos", Context.MODE_PRIVATE);
         editTxt_Nombre.setText(preferences.getString("nombre", ""));
         editTxt_Numero.setText(preferences.getString("numero", ""));
+
+        SharedPreferences preferencesRegistro = getSharedPreferences("campos", Context.MODE_PRIVATE);
+        editTxt_Nombre.setText(preferencesRegistro.getString("nombre", ""));
+        editTxt_Numero.setText(preferencesRegistro.getString("numero", ""));
     }
 
-    // Método onclick del botón Guardar. Realiza las comprobaciones de los datos que se ingresen
+    // Método onclick del botón Acceder. Realiza las comprobaciones de los datos que se ingresen
     public void guardarDatos(View view) {
         // Recogemos los datos ingresados creando 2 variables para cada campo
         String inputNombre = editTxt_Nombre.getText().toString();
         String inputNumero = editTxt_Numero.getText().toString();
 
-        // COMPROBACIONES AL HACER CLICK SOBRE GUARDAR
+        // COMPROBACIONES AL HACER CLICK SOBRE ACCEDER
 
         // Si los 2 campos están vacíos...
         if (inputNombre.isEmpty() && inputNumero.isEmpty()) {
@@ -84,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Método onclick del botón Registrarse que nos dirige a la pantalla de Registro
+    // Método onclick del botón Registrarse que nos dirige a la pantalla de registro
     public void irRegistro(View view) {
         Intent registro = new Intent(this, RegistroActivity.class);
         startActivity(registro);
